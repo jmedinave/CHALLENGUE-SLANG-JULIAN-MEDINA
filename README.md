@@ -12,3 +12,11 @@ sqlite3 nombre_de_base_de_datos.db
 .import /ruta al archhivo /ChallengeBPAIntern.csv ChallengeBPAIntern
 
 ```
+El Query creado para crear una tabla que cuenta los booleans de c_sal__c ,  c_sql__c , c_opp__c  y los agrupa por mes.
+
+```sql 
+select strftime('%m', close_date) as mes ,  
+SUM(c_sal__c) as c_sal_sum , SUM(c_sql__c) AS c_sql__sum , SUM(c_opp__c) AS c_OPP__sum 
+FROM ChallengeBPAIntern
+GROUP by mes ;
+```

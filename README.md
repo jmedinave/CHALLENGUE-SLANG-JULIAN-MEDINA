@@ -24,3 +24,6 @@ GROUP by mes ;
 Por ultimo, la tabla generada es la siguiente:
 
 ![image](https://github.com/jmedinave/CHALLENGUE-SLANG-JULIAN-MEDINA/assets/49196705/1397123f-43aa-4474-b973-dfcd28545097)
+
+
+En la parte analitica de los datos, podemos evidenciar que cada parte del proceso del dale es un cuello de botella en si, pues se evidencia que cada vez que pasa a la siguiente etapa del proceso, el numero de exitos o "TRUE" disminuye a la mitad. 

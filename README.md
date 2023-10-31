@@ -12,6 +12,7 @@ Podemos identificar 4 subquerys.
 
 
 ### Procedimiento:
+Para el desarrollo de este CHALLENGUE, se implementó en SQLite
 
 Primero debemos importar el archivo excel al entorno de sql, ya que use un entorno online, hago uso de la herramienta import CSV. 
 Sin embargo, puedo hacerlo si el entorno es local , se debe usar la siguiente linea de codigo:

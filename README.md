@@ -59,7 +59,14 @@ GROUP BY mes3;
 ```
 ![image](https://github.com/jmedinave/CHALLENGUE-SLANG-JULIAN-MEDINA/assets/49196705/94871674-fb21-4998-b59e-d1bada8e2c9f)
 
+### QUERY stagename
+Este QUERY expone los casos en los cuales stagename="Closed Won" y los agrupa por mes usando el date del acontecimiento: 
+```sql 
+SELECT strftime('%m', close_date) as mes4 , count(stagename) as Closed_Won_per_month
+FROM ChallengeBPAIntern
+where stagename="Closed Won" and strftime('%m', close_date)  in ("01","02","03","04","05","06","07","08","09","10","11","12")  
+GROUP By mes4 ;
+```
+![image](https://github.com/jmedinave/CHALLENGUE-SLANG-JULIAN-MEDINA/assets/49196705/a41fe1f9-957b-40a8-9cda-860087d72ae0)
 
-
-
-En la parte analitica de los datos, podemos evidenciar que cada parte del proceso del dale es un cuello de botella en si, pues se evidencia que cada vez que pasa a la siguiente etapa del proceso, el numero de exitos o "TRUE" disminuye a la mitad. 
+En la parte analitica de los datos, podemos evidenciar que cada parte del proceso del proceso de deal  es un cuello de botella en si, pues se evidencia que cada vez que pasa a la siguiente etapa del proceso, el numero de exitos o "TRUE" disminuye a la mitad. Adicionalmente una pequeña cantidad de deals realmente fueron cerrados y exitosos.

@@ -1,6 +1,13 @@
 # CHALLENGUE-SLANG-JULIAN-MEDINA
 Este repo es para subir la query para el challenge slang julian Medina. 
 
+### Requerimientos:
+
+<ul>
+    <li>EN UNA SOLA TABLA Y UNA SOLA QUERY presentar los casos en los que el evento SAL,SQL,OPP sucedieron y agrupar por mes.&nbsp;</li>
+    <li>Adicionalmente, presentar los casos en los que el evento stagename tiene el valor &quot;Closed Won&quot; y agrupar por mes.</li>
+</ul>
+<p>&nbsp;</p>
 
 Primero debemos importar el archivo excel al entorno de sql, ya que use un entorno online, hago uso de la herramienta import CSV. 
 Sin embargo, puedo hacerlo si el entorno es local , se debe usar la siguiente linea de codigo:

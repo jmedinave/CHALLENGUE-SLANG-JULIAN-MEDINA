@@ -34,9 +34,32 @@ FROM ChallengeBPAIntern
 where  strftime('%m', sal_date)  in ("01","02","03","04","05","06","07","08","09","10","11","12") 
 GROUP By mes;
 ```
+Resultado:
 ![image](https://github.com/jmedinave/CHALLENGUE-SLANG-JULIAN-MEDINA/assets/49196705/3fe01143-3fcc-47ba-9920-f614a70a44ca)
 
-Por ultimo, la tabla generada es la siguiente:
+### QUERY SQL
+Este QUERY expone los casos TRUE de la columna C_SQL__C y los agrupa por mes usando el date del acontecimiento: 
+```sql 
+select strftime('%m', sql_date) as mes2   ,COUNT(c_sql__c) AS success_sql 
+FROM ChallengeBPAIntern
+where  strftime('%m', sql_date)  in ("01","02","03","04","05","06","07","08","09","10","11","12") 
+GROUP BY mes2;
+
+```
+Resultado:
+![image](https://github.com/jmedinave/CHALLENGUE-SLANG-JULIAN-MEDINA/assets/49196705/3bf150a5-3086-49e2-8af3-e4105245403c)
+
+### QUERY OPP
+Este QUERY expone los casos TRUE de la columna C_OPP__C y los agrupa por mes usando el date del acontecimiento: 
+```sql 
+select strftime('%m', opportunity_date) as mes3   ,COUNT(c_opp__c) AS success_opp
+FROM ChallengeBPAIntern
+where  strftime('%m', opportunity_date)  in ("01","02","03","04","05","06","07","08","09","10","11","12") 
+GROUP BY mes3;
+```
+![image](https://github.com/jmedinave/CHALLENGUE-SLANG-JULIAN-MEDINA/assets/49196705/94871674-fb21-4998-b59e-d1bada8e2c9f)
+
+
 
 
 En la parte analitica de los datos, podemos evidenciar que cada parte del proceso del dale es un cuello de botella en si, pues se evidencia que cada vez que pasa a la siguiente etapa del proceso, el numero de exitos o "TRUE" disminuye a la mitad. 

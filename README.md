@@ -8,6 +8,10 @@ Este repo es para subir la query para el challenge slang julian Medina.
     <li>Adicionalmente, presentar los casos en los que el evento stagename tiene el valor &quot;Closed Won&quot; y agrupar por mes.</li>
 </ul>
 <p>&nbsp;</p>
+Podemos identificar 4 subquerys. 
+
+
+### Procedimiento:
 
 Primero debemos importar el archivo excel al entorno de sql, ya que use un entorno online, hago uso de la herramienta import CSV. 
 Sin embargo, puedo hacerlo si el entorno es local , se debe usar la siguiente linea de codigo:
